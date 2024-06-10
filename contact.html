@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+  <title>Contact Us</title>
+</head>
+<body>
+  <a id="top"></a>
+  <div id="container" class="container">    
+    <nav class="navMenu">
+      <h2><a href="index.html" class="logo">OH</a></h2>
+        <ul class="rightNav">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropbtn"><a href="cities.html">Cities &#8642;</a>
+            <ul class="dropdown">
+              <a href="columbus.html">Columbus</a>
+              <a href="cleveland.html">Cleveland</a>
+              <a href="cincinnati.html">Cincinnati</a>
+            </ul>
+          </li>          
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>    
+    <header class="header">
+      <h1>Want To Connect?</h1>
+      <p>
+        If you have questions, want to know more, or would just like to get updates when new content is added, just follow these simple steps!!
+      </p>
+    </header>
+    <aside class="dyk">
+      <p>
+        <i>Stay in-the-know with Ohio!</i><br><br>
+        <ol>
+          <li>Enter in your first and last name.</li>
+          <li>Enter and confirm a valid email address.</li>
+          <li>Send us a message with your questions, comments, or any features you would like to see added!</li>
+          <li>You'll recieve an automated response to your email first, but we'll get back to you typically in about 24 to 48 hours.</li>
+          <li>And that's it! No more instructions. <br> Go and enjoy your day!</li>
+        </ol>
+      </p>      
+    </aside>
+    <div class="clearfix"></div>
+    <div class="bgimg"><img src="./img/OhioOrg.png" alt="Ohio, The Heart of it All"></div>   
+    <form class="flexcontainer" action="https://wp.zybooks.com/form-viewer.php" method="post" onsubmit="return checkEmail()" target="_blank">
+      <div id="info_input">
+        <label for="firstName">First Name: </label> <br> 
+        <input type="text" id="firstName" name="firstName" placeholder="First Name">
+        <br>
+        <label for="lastName">Last Name: </label> <br> 
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+        <br>
+        <!-- Email -->
+        <label for="email">Email: </label>
+        <br>
+        <input type="email" name="email" id="email" placeholder="Enter an Email" required>
+        <br>
+        <Label for="confirmEmail">Confirm Email:</Label>
+        <br>
+        <input type="email" name="confirmEmail" id="confirmEmail" placeholder="Confirm Your Email" required>        
+        <br>              
+      </div>         
+      <div id="text_area">
+        <!-- Textarea Input -->
+        <label for="message">Message</label><br>
+        <textarea name="message" id="message" cols="50" rows="15" placeholder="Enter your message"></textarea>
+        <br>
+        <button type="submit" id="submitBtn" value="Submit" name="submitBtn">Submit</button>
+        <script>
+         function checkEmail() {
+          let f1 = document.getElementById("email").value
+          let f2 = document.getElementById("confirmEmail").value
+          if ( f1 !== f2 ) {         
+            alert("Emails need to be matching!")
+            return false;
+          } else {
+            return true;
+          }
+         }
+        </script>
+        <br>        
+        <button type="reset" name="resetButton" id="resetButton" value="Reset Forms">Reset Forms</button>
+      </div>
+    </form>
+    
+    <a href="#top" ><img src="./img/toparrow.png" id="topbtn" alt=""></a>    
+  </div>
+</body>
+</html>

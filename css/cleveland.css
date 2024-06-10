@@ -1,0 +1,145 @@
+html {
+  background: -webkit-linear-gradient(100deg, #860038, #041e42);
+  background: linear-gradient(-10deg, #860038, #041e24);
+  min-height: 100vh;
+  /* font-size: 18px; */
+  color: #fbfef9;
+}
+body {
+  position: relative;
+}
+.bgimg {
+  position: absolute;  
+  top: 6vw;
+  left: 5vw;
+  z-index: -1;  
+}
+.bgimg img {
+  width: 70vw;
+  height: 600px;
+  opacity: 50%;
+}
+.damion-regular {
+  font-family: "Damion", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.clearfix {
+  position: relative;
+  clear: both;
+}
+sup a {
+  color: #fbfef9;
+  font-size: 10px;
+  padding: 2px;
+}
+sup a:hover {
+  font-size: 14px;
+}
+.flexcontainer {
+  padding: 20px;
+  margin: 12px 8px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+.flexcontainer div {
+  box-sizing: border-box;
+  border: 2px solid #292929;
+  border-radius: 10px;
+  background-color: #29292971;
+  margin: 6px;
+  padding: 12px;
+}
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: flex-start;
+  font-size: 14px;
+  color: #fbfef9;
+  height: 200px;  
+  overflow-y: auto;
+}
+footer ul {
+  list-style-type: none;   
+}
+footer a {
+  color: #fbfef9;  
+}
+footer a:hover { 
+  text-decoration: underline;
+}
+.header {
+  float: left;
+  border: 2px solid #292929;
+  border-radius: 10px;
+  background-color: #29292971;
+  margin: 50px 8px 8px 100px;
+  padding: 20px;
+  width: 800px;
+}
+.header h1 {
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 80px;
+  font-family: "Damion", cursive;
+}
+.header p {
+  padding-left: 25%;
+  font-size: 22px;  
+  line-height: 2em;
+}
+.header p i {
+  font-style: normal;
+  font-family: "Damion", cursive;
+  font-size: 28px;
+}
+aside {
+  float: right;
+  border: 2px solid #868998;
+  border-radius: 10px;
+  background-color: #86899885;
+  margin: 50px 8px 8px 8px;
+  padding: 20px;  
+  width: 250px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: justify;  
+}
+aside i {
+  font-size: 22px;
+  font-weight: 500;
+}
+#table {
+  margin: 24px;
+  padding: 30px;
+}
+#table table {
+  width: 700px;
+  border: 2px solid #fbfef9;
+  text-align: center;
+}
+#summary {
+  margin: 12px;
+  padding: 20px;
+  line-height: 2.5em;
+  width: 600px;
+}
+#links ul {
+  padding: 10px;
+  list-style: none;
+}
+#links{
+  padding: 20px;
+  margin: 12px;  
+}
+#links a {
+  font-size: 20px;
+  line-height: 2em;
+  color: #fbfef9;
+}
+#links a:hover{
+  text-decoration: underline;
+}

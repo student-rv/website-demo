@@ -1,0 +1,227 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Used for 'Back To Top' button */
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;  
+  -webkit-focus-ring-color: rgba(255,255,255,0)!;
+  outline: none;
+}
+.damion-regular {
+  font-family: "Damion", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+/*----- Main Style -----*/
+html, body {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.7em;  
+}
+body.city {
+  background-color: #292929;
+  color: #fbfef9;
+}
+@media screen and (max-width:480px) {
+  .indexHome {        
+    background-image: url(../img/OH_portrait.jpg);
+    background-color: #000; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+    background-position: center center;
+    size: 100dvh;
+    z-index: -1;    
+  } 
+}
+@media screen and (min-width:601px) {  
+  .indexHome {    
+    background-image: url(../img/OH_Map.jpg);
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;  
+    z-index: -1;
+}
+}
+.clear {
+  clear:both
+}
+/* -- Task 2 - C4.1 */
+a {
+  color: blue;
+  text-decoration: none;
+}
+h1, h2, h3 {
+  padding-bottom: 20px;
+}
+p {
+  margin-left: 8px;
+}
+/* -- Task 2 - C4.3 -- */
+#topbtn {
+  position: -webkit-sticky;
+  position: fixed;
+  float: right;
+  right: 3vh;
+  bottom: 1vh;
+  padding: 1em;
+  z-index: 99;  
+}
+#topbtn::selection {
+  background: transparent;
+}
+/*----- NavBar ------*/
+/* -- Task 2 - A1.3 - C4.2 -- */
+.navMenu {    
+  background-color: #292929;
+  color: #fbfef9;
+  overflow: auto;
+  text-decoration: none;
+  /* width: 100vw;      */
+}
+.navMenu ul {
+  list-style: none;
+  text-decoration: none;
+}
+.navMenu a {
+  display: block;
+  color: #fbfef9;
+}
+.navMenu a:hover {
+  /* background-color: #868998; */
+  color: #cc0029;
+}
+.navMenu h2 {
+  float: left;
+  padding-top: 20px;
+  margin-left: 18px;
+}
+/* !! Task 2 - C.2: Float Right & Left !! */
+.rightNav {
+  float: right;  
+}
+.rightNav li {
+  display: block;
+  float: left;
+}
+.rightNav a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+.rightNav a:hover{
+  background-color: #474747b2;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  float: left;
+  overflow: hidden;
+  z-index: 99;
+}
+.dropbtn:hover .dropdown {
+  display: block;
+  position: absolute;
+  background: #474747b2;
+}
+#homeHeader {
+  overflow: auto;
+  margin: 20px 18px;
+  padding: 20px 30px;
+  max-width: 98%;
+  border: 3px solid #292929;
+  background-color: #29292971;
+  color: #fbfef9;
+}
+#homeHeader h1 {
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 80px;
+  font-family: "Damion", cursive;
+}
+#homeHeader p {
+  float: left;
+  font-size: 28px;
+  line-height: 1.6em;
+  padding: 20px;
+  margin-top: 10px;
+  width: 50vw;  
+  text-align: justify;
+}
+#homeHeader p a {
+  text-decoration: none;
+  color: #fbfef9;
+}
+#homeHeader p a:hover{
+  color: #cc0029;
+  text-decoration: underline;
+}
+#homeHeader .home_img {
+  float:right;  
+  position: relative;
+  width: 30vw;
+  height: auto;
+  top: 50%;
+  right: 1%;
+  box-shadow: 20px 20px 16px 0px #000000c4;  
+}
+#homeSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.columbus {
+  border: 2px solid #000;
+  background-color: #29292971;
+  align-content: center;
+  margin: 8px;
+  padding: 20px;  
+  height: 250px;
+}
+.columbus:hover {
+  background-color: #292929;
+}
+.columbus img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;  
+}
+.cleveland {
+  border: 2px solid #000;
+  background-color: #29292971;
+  align-content: center;
+  margin: 8px;
+  padding: 20px;  
+  height: 250px;
+}
+.cleveland:hover {
+  background-color: #292929;
+}
+.cleveland img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;  
+}
+.cincinnati {
+  border: 2px solid #000;
+  background-color: #29292971;
+  align-content: center;
+  margin: 8px;
+  padding: 20px;  
+  height: 250px;
+}
+.cincinnati:hover {
+  background-color: #292929;
+}
+.cincinnati img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;  
+}
